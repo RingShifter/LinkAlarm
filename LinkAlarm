@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+p  {
+  color: red;
+  font-family: courier;
+  font-size: 160%;
+}
+</style>
+</head>
+<body>
+<p id="demo"></p>
+<script>
+var x = 1
+ setInterval(function() {
+var day = Date().substring(0, 3);
+  var hours24 = Date().substring(16, 18);
+  var minutes = Date().substring(19, 21);
+  var seconds = Date().substring(22, 24);
+  var time = (((hours24 + ":") + minutes) + (":" + seconds)) + (" " + day);
+  if ((hours24 == 7 && minutes == 15) && Date().substring(0, 3) == ("Tue" || "Thu")) {
+      open("https://gcpsk12-org.zoom.us/j/94296135046?pwd=bmQ3OUdERmt0YkJ3WG95aTBYSk5ydz09");
+    }
+  if ((hours24 == 9 && minutes == 15) && Date().substring(0, 3) == ("Tue" || "Thu")) {
+      open("https://gcpsk12-org.zoom.us/j/93954646636?pwd=S0lxV1h5bUFyMUx2a1BkblIxMmp3Zz09#success");
+    }
+  if ((hours24 == 12 && minutes == 15) && Date().substring(0, 3) == ("Tue" || "Thu")) {
+      open("https://gcpsk12-org.zoom.us/meeting/register/tJcucuGgqD4tH9M3Fhr5Zlq3oS_vBkkqHS_6?_x_zm_rtaid=otF_5XCNQL61vBOb5VCbpw.1603207233702.96cf97730f82d12f8dd6ebab5b66d039&_x_zm_rhtaid=304");
+    }
+  if ((hours24 == 8 && minutes == 15) && Date().substring(0, 3) == ("Mon" || "Wed")) {
+      open(" https://gcpsk12-org.zoom.us/j/97749916577?pwd=S3hqV1U5WFRHN2ZJdFY3Qzc1VmpGdz09");
+    }
+  if ((hours24 == 11 && minutes == 15) && Date().substring(0, 3) == ("Mon" || "Wed")) {
+      open("https://gcpsk12-org.zoom.us/j/92379150520?pwd=RDNNY1FLME9OMGFKa2p3eTdnWm5mZz09");
+    }
+  if ((hours24 == 13 && minutes == 15) && Date().substring(0, 3) == ("Mon" || "Wed")) {
+      open("https://gcpsk12-org.zoom.us/j/99493583335?pwd=amIxSWY5THVzQTlGbzRlMGtERzRMdz09");}
+      document.getElementById("demo").innerHTML = time; }, 1000);
+</script>
+</body>
+</html>
